@@ -3,43 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meron M.</title>
+    <title>Contact</title>
+    <link rel="icon" href="./asset/image/android-chrome-192x192.png">
 </head>
-<body><!--Lets  -->
+<body>
     <hr>
     <a href="index.html">Home</a>
     <a href="contact.html">Contact</a>
-    <hr>
+    <a href="gallary.html">Gallary</a>
+
     <table cellspacing="15">
     <tr>
         <td>
-            <img src="./asset/image/koiu.jpg" alt="random landscape">
+            <img src="./asset/image/profile.jpg" alt="random landscape">
             </td>
         <td><h1>Meron Melese</h1>
             <h3> Student, Addis Ababa institute of Technology</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque odit voluptatum dignissimos ad! Consequuntur voluptatum aliquam aspernatur omnis eum modi ex, cupiditate quaerat provident eligendi. Tempore cupiditate fuga natus saepe!</p></td>
+            
     </tr>
     
     <hr>
-    <h3>Contact us ....</h3>
-
+    <h3>Contact me ....</h3>
+    <table>
     <form method="POST" action="mailto:se.meron.melese@gmail.com" enctype="utf-8">
-        <label for="fname">First name</label><input id="fname" name="First name" type="text"><br>
-        <label for="sname">Surname</label><input id="sname" name="Surname" type="text"><br>
-        <label for="email">Email</label><input id="email" name="email" type="email"><br>
-        What do you want to say?<br>
-        <textarea name="" id="" cols="30" rows="10"></textarea><br>
-        <input name="Submit" type="submit"><br>
-        Where are you from :
-        <select name="country" id="">
-            <option value="af">Africa</option>
-            <option value="as">Asia</option>
-            <option value="eu">Europe</option>
-        </select>
-    </form>
-    <hr>
-    <p></p>
-    <hr>
+        <tr><td><table><tr>
+            <td><label for="fname">First name</label></td
+            ><td><input id="fname" name="First name" type="text" required>*</td>
+        </tr>
+        <tr>
+            <td><label for="sname">Surname</label></td>
+            <td><input id="sname" name="Surname" type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input id="email" name="email" type="email" required>*</td>
+        </tr>
+        <tr>
+            <td><label for="checkbox">Gender</label></td>
+            <td> Male <input type="checkbox" name="Gender" id="gender">
+                Female <input type="checkbox" name="Gender" id="gender" required>*</td>
+        </tr>
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td><input id="password" name="Password" type="password" minlength="8" required>*</td>
+        </tr>
+        <tr>
+            <td>What do you want to say?<br></td>
+            <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input name="Submit" type="submit"><br></td>
+        </tr>
+        <tr>
+            <td> Where are you from :</td>
+            <td><select name="country" id="">
+                <option value="af">Africa</option>
+                <option value="as">Asia</option>
+                <option value="eu">Europe</option>
+            </select></td>
+        </tr>      
+        
+        </table></td>
+        <td>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=addis%20ababa%20institute%20of%20technology&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://ytify.com">
+            https://ytify.com/</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas 
+            {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+        </td> </form>
+    </table>
+    
 </body>
 
 </html>
