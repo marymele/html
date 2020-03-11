@@ -27,11 +27,11 @@
     <form method="POST" action="mailto:se.meron.melese@gmail.com" enctype="utf-8">
         <tr><td><table cellspacing="30"><tr>
             <td><label for="fname">First name</label></td
-            ><td><input id="fname" name="First name" type="text" pattern="[A-Za-z]{2-15}" required>*</td>
+            ><td><input id="fname" name="First name" type="text" pattern="[A-Za-z]{2,15}" required>*</td>
         </tr><br>
         <tr>
             <td><label for="lname">Last name</label></td>
-            <td><input id="lname" name="Last name" type="text" pattern="[A-Za-z]{2-15}" required>*</td>
+            <td><input id="lname" name="Last name" type="text" pattern="^[A-Z][a-z]{2,15}$" required>*</td>
         </tr><br>
         <tr>
             <td><label for="email">Email</label></td>
@@ -68,7 +68,9 @@
             {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
         </td> </form>
     </table>
-    
+    <hr>
+    <p align="center"> Developed by marymele. &copy;2020 </p>
+    <hr>
 </body>
 
 </html>
