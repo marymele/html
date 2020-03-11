@@ -27,11 +27,11 @@
     <form method="POST" action="mailto:se.meron.melese@gmail.com" enctype="utf-8">
         <tr><td><table cellspacing="30"><tr>
             <td><label for="fname">First name</label></td
-            ><td><input id="fname" name="First name" type="text" pattern="[A-Za-z]{2,15}" required>*</td>
+            ><td><input id="fname" name="First name" type="text" pattern="^[A-Z]{1}[a-z]+$" required>*</td>
         </tr><br>
         <tr>
             <td><label for="lname">Last name</label></td>
-            <td><input id="lname" name="Last name" type="text" pattern="^[A-Z][a-z]{2,15}$" required>*</td>
+            <td><input id="lname" name="Last name" type="text" pattern="^[A-Z]{1}[a-z]+$" required>*</td>
         </tr><br>
         <tr>
             <td><label for="email">Email</label></td>
@@ -44,7 +44,7 @@
         </tr><br>
         <tr>
             <td><label for="password">Password</label></td>
-            <td><input id="password" name="Password" type="password" pattern="[A-Z][a-z][0-9]{8-15}" required>*</td>
+            <td><input id="password" name="Password" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>*</td>
         </tr><br>
         <tr>
             <td><label for="phone"> Phone number</label></td>
